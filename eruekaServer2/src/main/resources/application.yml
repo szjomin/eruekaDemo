@@ -3,7 +3,7 @@ spring:
     name: service-erueka-register
 
 server:
-  port: 8801
+  port: 8802
 eureka:
   instance:
     hostname: 127.0.0.1
@@ -13,5 +13,5 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/, http://127.0.0.1:8802/eureka/
-
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/, http://127.0.0.1:8801/eureka/
+      #http://${eureka.instance.hostname}:${server.port}/eureka/

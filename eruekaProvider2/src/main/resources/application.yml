@@ -2,6 +2,7 @@ eureka:
   client:
     serviceUrl: #注册中心的注册地址
       defaultZone: http://127.0.0.1:8801/eureka/
+      #也可以两个都注册，一个够了会相互注册，如 http://127.0.0.1:8801/eureka/, http://127.0.0.1:8802/eureka/
 server:
   port: 8804  #服务端口号
 spring:
